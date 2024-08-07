@@ -1,14 +1,16 @@
 package happygame.api.controlers;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import happygame.api.dto.RegisterPlayerDTO;
+import jakarta.validation.Valid;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/login")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class LoginController {
-    @GetMapping
-    public String login() {
+    @PostMapping("/register")
+    public String register(@Valid @RequestBody RegisterPlayerDTO player) {
+
         return "Logado!";
     }
 }

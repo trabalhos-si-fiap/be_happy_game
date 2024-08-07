@@ -1,13 +1,13 @@
 package happygame.api.models;
 
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Player {
     private String name;
     private String mail;
     private String password;
-    private Date birhDate;
+    private LocalDate birhDate;
 
     public boolean isOfAge() {
         return true;
