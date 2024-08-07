@@ -1,6 +1,6 @@
-package happygame.api.dto;
+package happygame.api.domain.dto;
 
-import happygame.api.models.Player;
+import happygame.api.domain.models.Player;
 
 import java.time.LocalDate;
 

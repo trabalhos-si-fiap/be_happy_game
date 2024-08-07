@@ -1,4 +1,4 @@
-package happygame.api.models;
+package happygame.api.domain.models;
 
 public class Game {
     private String name;

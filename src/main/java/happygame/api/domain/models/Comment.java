@@ -1,4 +1,4 @@
-package happygame.api.models;
+package happygame.api.domain.models;
 
 import java.time.LocalDateTime;
 
