@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: "postgres:16"
+    restart: always
+    container_name: HP_DB
+    volumes:
+      - ./api/db/data:/var/lib/postgresql/HP_DB/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: HP_DB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
