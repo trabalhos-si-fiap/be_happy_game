@@ -1,12 +1,11 @@
 package happygame.api.controlers;
 
-import happygame.api.domain.dto.AlterPlayerDTO;
-import happygame.api.domain.dto.DetailPlayerDataDTO;
-import happygame.api.domain.dto.ListDataPlayerDTO;
-import happygame.api.domain.dto.RegisterPlayerDTO;
+import happygame.api.domain.dto.player.AlterPlayerDTO;
+import happygame.api.domain.dto.player.DetailPlayerDataDTO;
+import happygame.api.domain.dto.player.ListDataPlayerDTO;
+import happygame.api.domain.dto.player.RegisterPlayerDTO;
 import happygame.api.domain.models.Player;
 import happygame.api.domain.repositories.PlayerRepository;
-import happygame.api.infra.security.SecurityConfigurations;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;

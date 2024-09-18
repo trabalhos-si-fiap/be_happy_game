@@ -47,11 +47,11 @@ public class ExceptionManager {
         return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Acesso negado");
     }
 
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity tratarErro500(Exception ex) {
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erro: " +ex.getLocalizedMessage());
-    }
-
+//    @ExceptionHandler(Exception.class)
+//    public ResponseEntity tratarErro500(Exception ex) {
+//        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erro: " +ex.getLocalizedMessage());
+//    }
+//
     private record FieldErrors(String field, String message){
         public FieldErrors(FieldError error) {
             this(error.getField(), error.getDefaultMessage());

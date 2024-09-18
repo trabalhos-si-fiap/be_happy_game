@@ -1,8 +1,8 @@
 package happygame.api.domain.models;
 
 
-import happygame.api.domain.dto.RegisterPlayerDTO;
-import happygame.api.domain.dto.AlterPlayerDTO;
+import happygame.api.domain.dto.player.RegisterPlayerDTO;
+import happygame.api.domain.dto.player.AlterPlayerDTO;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -61,7 +61,7 @@ public class Player  implements UserDetails {
         if (player.birthDate() != null) {
             this.birthDate = player.birthDate();
         }
-        if (player.isActive() == false || player.isActive() == true) {
+        if (player.isActive() != null) {
             this.isActive = player.isActive();
         }
 

@@ -1,4 +1,4 @@
-package happygame.api.domain.dto;
+package happygame.api.domain.dto.player;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
